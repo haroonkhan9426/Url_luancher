@@ -48,7 +48,33 @@ class HomeScreen extends StatelessWidget {
                 ),
                 onPressed: () {
                   print('Launch URL');
-                  _launchWebsite();
+                  _launchWebsite('http://877drainhelpllc.com/');
+                },
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 80),
+              child: RaisedButton(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(10),
+                  ),
+                ),
+                color: Color(0xFF27C5EC),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 10),
+                  child: Text(
+                    'Franchise Opportunity',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 16,
+                        fontWeight: FontWeight.w700),
+                  ),
+                ),
+                onPressed: () {
+                  print('Launch URL');
+                  _launchWebsite(
+                      'https://877drainhelpllc.com/index.php/why-our-team/');
                 },
               ),
             ),
@@ -83,8 +109,8 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  _launchWebsite() async {
-    const url = 'http://877drainhelpllc.com/ ';
+  _launchWebsite(url) async {
+    const url = ' ';
     if (await canLaunch(url)) {
       await launch(url);
     } else {
