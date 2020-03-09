@@ -3,7 +3,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:name="io.flutter.app.FlutterApplication"
-        android:label="url_launcher_app"
+        android:label="877 Drain Help"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name="com.drainHelpLLC877.drainHelp877.MainActivity"
