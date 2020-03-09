@@ -110,7 +110,6 @@ class HomeScreen extends StatelessWidget {
   }
 
   _launchWebsite(url) async {
-    const url = ' ';
     if (await canLaunch(url)) {
       await launch(url);
     } else {
